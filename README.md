@@ -44,12 +44,12 @@
 ### No. 3a
 > Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 #### Penjelasan :
-**1. Pertama-tama, buka file `soal2.pcapng` yang telah disediakan. Kemudian lakukan filtering dengan sintaks `(ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702)`.**
+**1. Pertama-tama, buka file `soal2.pcapng` yang telah disediakan. Kemudian lakukan filtering dengan kueri `(ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702)`.**
 
-Keterangan Sintaks : 
-- `(ip.src == 239.255.255.250 && udp.srcport == 3702)` : memfilter paket yang `berasal dari` address 239.255.255.250 dan Port 3702.
+Keterangan Kueri : 
+- `(ip.src == 239.255.255.250 && udp.srcport == 3702)` : Memfilter paket yang `berasal dari` address 239.255.255.250 dan Port 3702.
 - `||` : Merupakan operator yang berarti `or`.
-- `(ip.dst == 239.255.255.250 && udp.dstport == 3702)` : memfilter paket yang `menuju` address 239.255.255.250 dan Port 3702.
+- `(ip.dst == 239.255.255.250 && udp.dstport == 3702)` : Memfilter paket yang `menuju` address 239.255.255.250 dan Port 3702.
 
 <img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/a6bafbc3-1e3c-45ef-a213-c0513567d11b">
 
@@ -60,7 +60,7 @@ Keterangan Sintaks :
 ### No. 3b
 > Protokol layer transport apa yang digunakan?
 #### Penjelasan :
-**Berdasarkan hasil filter dari sintaks sebelumnya, pada `kolom protocol` ditunjukkan seluruhnya menggunakan Protokol Layer Transport `UDP`.**  
+**Berdasarkan hasil filter dari kueri sebelumnya, pada `kolom protocol` ditunjukkan seluruhnya menggunakan Protokol Layer Transport `UDP`.**  
 
 <img width="56" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f4abb01e-98a2-41f4-8045-ec60d51755dc">
 
@@ -69,28 +69,80 @@ Keterangan Sintaks :
 
 
 ## NO. 4
-Berapa nilai checksum yang didapat dari header pada paket nomor 130?
+> Berapa nilai checksum yang didapat dari header pada paket nomor 130?
+#### Penjelasan :
 
 ## NO. 5
-Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
+> Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 ### No. 5a
-Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+> Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
+#### Penjelasan :
+
 ### No. 5b
-Port berapakah pada server yang digunakan untuk service SMTP?
+> Port berapakah pada server yang digunakan untuk service SMTP?
+#### Penjelasan :
+
 ### No. 5c
-Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+> Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+#### Penjelasan :
 
 ## NO. 6
-Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+> Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+#### Penjelasan :
 
 ## NO. 7
-Berapa jumlah packet yang menuju IP 184.87.193.88?
+> Berapa jumlah packet yang menuju IP 184.87.193.88?
+#### Penjelasan :
+**1. Pertama-tama, buka file `soal6-9.pcapng` yang telah disediakan.**
+**2. Kemudian lakukan filtering dengan kueri `ip.dst == 184.87.193.88`.**
+Keterangan Kueri : 
+- `ip.dst == 184.87.193.88` : Memfilter paket yang menuju `IP 184.87.193.88`.
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/0e0d1af2-d853-4847-ba47-ba515fd19f36">
+  
+**3. Kemudian, lihat ke bagian bawah jendela wireshark dimana menunjukkan informasi terkait Jumlah Seluruh Paket `Packets` dan Jumlah Paket Hasil Filter yang tercapture `Displayed`. Berdasarkan informasi tersebut, banyak paket yang tercapture atau `Displayed`, yaitu sebanyak `6 paket`.****
+<img width="268" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/3c54f926-c79f-4fd7-90cd-86236b33982b">
+
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/4a9b5b06-724a-455d-b5e5-9adab47cb20d)
+
 
 ## NO. 8
-Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+> Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+#### Penjelasan :
+**1. Pertama-tama, buka file `soal6-9.pcapng` yang telah disediakan.**
+
+**2. Kemudian lakukan filtering dengan kueri `tcp.dstport == 80 || udp.dstport == 80`.**
+
+Keterangan Kueri : 
+- `tcp.dstport == 80` : Memfilter paket yang menuju `Port 80` menggunakan protocol TCP.
+- `||` : Merupakan operator yang berarti `or`.
+- `udp.dstport == 80` : Memfilter paket yang menuju `Port 80` menggunakan protocol UDP.
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5af71588-a9f5-41c3-b9e6-c81835ee25ea">
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/34b556c6-7ba9-49b5-a857-0eaf42dcdcda)
+
 
 ## NO. 9
-Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+> Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+#### Penjelasan : 
+**1. Pertama-tama, buka file `soal6-9.pcapng` yang telah disediakan.**
+
+**2. Kemudian lakukan filtering dengan kueri `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`.**
+
+Keterangan Kueri : 
+- `ip.src == 10.51.40.1` : Memfilter paket yang `berasal` dari alamat `10.51.40.1 `.
+- `&&` : Merupakan operator yang berarti `and`.
+- `ip.dst != 10.39.55.34` : Memfilter paket yang `tidak menuju` alamat `10.39.55.34`
+  
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/aaf54497-5c37-4cf4-b4f0-fd496bcf9849">
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f89a7ab1-8cb4-4bca-ae57-a5302b23bd38)
+
 
 ## NO. 10
-Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet.
+> Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet.
+#### Penjelasan :
