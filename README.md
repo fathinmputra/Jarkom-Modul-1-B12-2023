@@ -78,13 +78,58 @@ Keterangan Kueri :
 > Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
 #### Penjelasan :
 
+**1. Pertama-tama, buka file `soal5.pcap` yang telah disediakan.**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5ed7b500-0874-41d6-ab2f-da196798c279">
+
+**2. Kemudian, lihat ke bagian bawah jendela wireshark dimana menunjukkan informasi terkait Jumlah Seluruh Paket `Packets`. Berdasarkan informasi tersebut,  banyak packet yang berhasil di capture dari file pcap tersebut `Displayed`, yaitu sebanyak `60 paket`.**
+
+<img width="267" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/0697d27a-3076-45a4-a4af-ec63b4faac38">
+
 ### No. 5b
 > Port berapakah pada server yang digunakan untuk service SMTP?
 #### Penjelasan :
+**Port default yang digunakan untuk layanan SMTP `port 25`**
 
 ### No. 5c
 > Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
 #### Penjelasan :
+**1. Kemudian lakukan filtering dengan mengetikkan `ip.src` pada filter box dan klik `Enter` untuk memulai filtering.**
+
+**2. Alamat IP yang tercapture, yaitu `10.10.1.1, 10.10.1.4, dan 74.53.140.153`. Ternyata IP yang merupakan public IP adalah `74.53.140.153`**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/b412bd54-38f2-4391-9467-7773e49abc94">
+
+### Cara Mendapatkan IP nc untuk Connect ke Instance soal:
+**1. Pertama-tama, download file `soal5.pcap` yang telah disediakan dan download `zippppfileee.zip` juga.**
+
+**2. Karena kita membutuhkan password untuk ekstrak file zip, buka terlebih dahulu file `soal5.pcap`, cari paket yang memuat info terkait password, yaitu `paket 14`**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/869bdcf5-56cd-4e22-955d-0d3a5b6b32dd">
+
+**3. Kemudian, klik kanan pada paket tersebut. Pilih `Follow` dan pilih `TCP Stream`.**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/ae1fc791-a027-4410-a437-5b39c375488c">
+
+**4. Setelah TCP Stream dari paket tersebut ditampilkan, maka cari informasi terkait password untuk membuka file zip**
+
+<img width="643" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/b5ec29ec-fa19-4e7c-8599-aa25b52e3ade">
+
+**5. Dari kode password yang didapatkan perlu dilakukan decode pada Base64 untuk mendapatkan password asli. Decode dilakukan dengan bantuan `https://www.base64decode.org/`. Maka, didapatkan bahwa password dari file zip adalah `5implePas5word`**
+
+<img width="581" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/971e2f05-e79c-4ec2-a1fe-274434d51137">
+
+**4. Extract file zip tersebut dengan password `5implePas5word`.**
+
+<img width="401" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/fa097914-8bea-40b2-be5c-c2f8f6a44f43">
+
+**5. Sehingga, didapatkan `nc 10.21.78.111 11111` untuk connect ke instance.**
+
+<img width="354" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/280f4a44-5a8f-49e3-a245-c6b7c940c50e">
+
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/bec813d8-e0fd-44aa-82c1-773eb9ea86f2)
 
 ## NO. 6
 > Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
