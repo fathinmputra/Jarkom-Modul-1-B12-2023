@@ -146,3 +146,26 @@ Keterangan Kueri :
 ## NO. 10
 > Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet.
 #### Penjelasan :
+**1. Pertama-tama, buka file `soal10.pcapng` yang telah disediakan.**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/81627828-2f5c-4040-89cc-f4c1545cf8d0">
+
+
+**2. Kemudian lakukan filtering dengan mengetikkan `telnet` pada filter box dan klik `Enter` untuk memulai filtering.**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/fc8c8189-0b42-43f4-b560-313b3d3ce110">
+
+
+**3. Kemudian, klik kanan pada salah satu paket. Pilih `Follow` dan pilih `TCP Stream`.**
+
+<img width="644" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/74ae75da-f6ea-4e9b-930a-3eb8bac4a9df">
+
+**4. Setelah TCP Stream dari paket tersebut ditampilkan, maka cari informasi dari tiap stream.**
+
+**5. Cek satu persatu stream, didapatkan beberapa kredensial. Coba satu persatu informasi kredensial yang ada. Sehingga, didapatkan kredensial yang tepat, yaitu `dhafin:kesayangannyak0k0` pada `stream 2`**
+
+<img width="641" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5d73728f-fa21-4d5b-9ece-a3a27e465f32">
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/891e5879-4f98-4e0d-9201-b4f637a0b4f0)
+
