@@ -22,7 +22,7 @@
 > Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
 #### Penjelasan :
-**1. Pertama-tama, lakukan filtering untuk mendapatkan paket dengan protokol HTTP dengan mengetikkan `http` pada filter box dan klik `Enter` untuk memulai filtering.**
+**1. Pertama-tama, buka file `soal2.pcapng` yang telah disediakan. Lalu, lakukan filtering untuk mendapatkan paket dengan protokol HTTP dengan mengetikkan `http` pada filter box dan klik `Enter` untuk memulai filtering.**
 <img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/bd32769e-faf4-48b6-836c-ae0f854ce400">
 
 
@@ -40,11 +40,33 @@
 
 
 ## NO. 3
-Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
+> Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
 ### No. 3a
-Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+> Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
+#### Penjelasan :
+**1. Pertama-tama, buka file `soal2.pcapng` yang telah disediakan. Kemudian lakukan filtering dengan sintaks `(ip.src == 239.255.255.250 && udp.srcport == 3702) || (ip.dst == 239.255.255.250 && udp.dstport == 3702)`.**
+
+Keterangan Sintaks : 
+- `(ip.src == 239.255.255.250 && udp.srcport == 3702)` : memfilter paket yang `berasal dari` address 239.255.255.250 dan Port 3702.
+- `||` : Merupakan operator yang berarti `or`.
+- `(ip.dst == 239.255.255.250 && udp.dstport == 3702)` : memfilter paket yang `menuju` address 239.255.255.250 dan Port 3702.
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/a6bafbc3-1e3c-45ef-a213-c0513567d11b">
+
+
+**2. Kemudian, lihat ke bagian bawah jendela wireshark dimana menunjukkan informasi terkait Jumlah Seluruh Paket `Packets` dan Jumlah Paket Hasil Filter yang tercapture `Displayed`. Berdasarkan informasi tersebut, banyak paket yang tercapture atau `Displayed`, yaitu sebanyak `21 paket`.**
+<img width="269" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/e72b7d7a-5a78-4c5c-b1ca-820a85b752e2">
+
 ### No. 3b
-Protokol layer transport apa yang digunakan?
+> Protokol layer transport apa yang digunakan?
+#### Penjelasan :
+**Berdasarkan hasil filter dari sintaks sebelumnya, pada `kolom protocol` ditunjukkan seluruhnya menggunakan Protokol Layer Transport `UDP`.**  
+
+<img width="56" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f4abb01e-98a2-41f4-8045-ec60d51755dc">
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/8cf75ffa-3c33-4f0f-9fac-fdc7a257336e)
+
 
 ## NO. 4
 Berapa nilai checksum yang didapat dari header pada paket nomor 130?
