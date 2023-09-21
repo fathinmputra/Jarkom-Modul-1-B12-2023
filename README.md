@@ -8,18 +8,36 @@
 | Fathin Muhashibi Putra    | 5025211229 |
 
 ## NO. 1
-User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
+> User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
 ### No. 1a 
-Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+> Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 ### No. 1b
-Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+> Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 ### No. 1c 
-Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+> Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 ### No. 1d 
-Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+> Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 ## NO. 2
-Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+> Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+
+#### Penjelasan :
+**1. Pertama-tama, lakukan filtering untuk mendapatkan paket dengan protokol HTTP dengan mengetikkan `http` pada filter box dan klik `Enter` untuk memulai filtering.**
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/bd32769e-faf4-48b6-836c-ae0f854ce400">
+
+
+**2. Kemudian, klik kanan pada salah satu paket dengan protokol http. Pilih `Follow` dan pilih `HTTP Stream`.**
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/7e8ec775-7279-4a01-88ac-104f9984c488">
+
+
+**3. Setelah HTTP Stream dari paket tersebut ditampilkan, kita dapat melihat informasi terkait web server yang digunakan pada portal praktikum Jaringan Komputer, yaitu `gunicorn`.**
+
+<img width="644" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/73162916-3e68-486d-9f12-b5e95b404488">
+
+
+**ScreenShoot Flag :**
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/20fdbede-a68d-47ec-a1ff-351c6f88350b)
+
 
 ## NO. 3
 Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
