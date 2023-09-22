@@ -177,22 +177,23 @@ Keterangan Kueri :
 #### Penjelasan :
 **1. Berdasarkan soal yang didapat, terdapat beberapa hint sebagai berikut.**
 
-<img width="326" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/02ffcefc-7a86-46fa-9b31-de054669e1dd">
+<img width="310" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/8ab46fff-55c1-4582-937a-cdccdf08cc13">
 
 **2. Buka file `soal6-9.pcapng` yang telah disediakan.**
 
 **3. Cari paket ke `7812`. Lalu didapatkan ip.src, yaitu `104.18.14.101`**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/244ce305-ce9d-4854-829e-b7e4e444320d">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/b366f660-119a-49c7-8b9c-d9d28c347211">
 
-<img width="319" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/34a9ea66-566f-4f35-8349-585ba8fb7ce4">
+<img width="319" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/10c67a51-8bad-4a7c-865c-32e3ef94d4bd">
 
 **4. Dari Hint yang sebelumnya didapatkan, terdapat 6 huruf. Namun, karena ip.src hanya terdiri dari 4 digit angka (`104.18.14.101`) kita harus bagi menjadi 6 digit angka (`10.4.18.14.10.1`)**
 
 **5. Selanjutnya ubah tiap digit angka dari `10.4.18.14.10.1` dengan substitusi a1z26 Cipher. Rentang Huruf yang digunakan Huruf A-R, 1-18. Sehingga, didapatkan jawaban `JDRNJA`.**
 
 **ScreenShoot Flag :**
-<img width="864" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/9e989701-074a-481f-9b5e-9507cbe24f21">
+<img width="863" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/9e8e406e-97e2-4496-bd1d-851edc021afc">
+
 
 ## NO. 7
 > Berapa jumlah packet yang menuju IP 184.87.193.88?
@@ -201,15 +202,17 @@ Keterangan Kueri :
 **2. Kemudian lakukan filtering dengan kueri `ip.dst == 184.87.193.88`.**
 Keterangan Kueri : 
 - `ip.dst == 184.87.193.88` : Memfilter paket yang menuju `IP 184.87.193.88`.
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/0e0d1af2-d853-4847-ba47-ba515fd19f36">
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/af21556d-101d-402d-b26d-45b16c2d1b06">
+
   
 **3. Kemudian, lihat ke bagian bawah jendela wireshark dimana menunjukkan informasi terkait Jumlah Seluruh Paket `Packets` dan Jumlah Paket Hasil Filter yang tercapture `Displayed`. Berdasarkan informasi tersebut, banyak paket yang tercapture atau `Displayed`, yaitu sebanyak `6 paket`.****
-<img width="268" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/3c54f926-c79f-4fd7-90cd-86236b33982b">
 
+<img width="265" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5f891fdf-e766-474a-9ac2-de77133f4c7f">
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/4a9b5b06-724a-455d-b5e5-9adab47cb20d)
 
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/39fd223f-952a-41e5-b1bb-8213aa77075d)
 
 ## NO. 8
 > Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
@@ -223,10 +226,11 @@ Keterangan Kueri :
 - `||` : Merupakan operator yang berarti `or`.
 - `udp.dstport == 80` : Memfilter paket yang menuju `Port 80` menggunakan protocol UDP.
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5af71588-a9f5-41c3-b9e6-c81835ee25ea">
+<img width="953" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/14320b49-ce31-46d3-b921-ab3f30d07a2b">
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/34b556c6-7ba9-49b5-a857-0eaf42dcdcda)
+
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f01e847c-f4a3-49ae-9f1b-633f84aaa237)
 
 
 ## NO. 9
@@ -241,10 +245,11 @@ Keterangan Kueri :
 - `&&` : Merupakan operator yang berarti `and`.
 - `ip.dst != 10.39.55.34` : Memfilter paket yang `tidak menuju` alamat `10.39.55.34`
   
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/aaf54497-5c37-4cf4-b4f0-fd496bcf9849">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/08cfa9d9-2ba5-4533-b346-1c2a7ebba9fd">
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f89a7ab1-8cb4-4bca-ae57-a5302b23bd38)
+
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/2aad49cb-a2f3-43b7-aa6c-8de99ec6b6c3)
 
 
 ## NO. 10
@@ -252,24 +257,24 @@ Keterangan Kueri :
 #### Penjelasan :
 **1. Pertama-tama, buka file `soal10.pcapng` yang telah disediakan.**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/81627828-2f5c-4040-89cc-f4c1545cf8d0">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/6677bf17-d55a-4ca1-aac8-658acae47f50">
 
 
 **2. Kemudian lakukan filtering dengan mengetikkan `telnet` pada filter box dan klik `Enter` untuk memulai filtering.**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/fc8c8189-0b42-43f4-b560-313b3d3ce110">
-
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/e15f9045-e7f3-4ac6-96cb-f0843d4ebe16">
 
 **3. Kemudian, klik kanan pada salah satu paket. Pilih `Follow` dan pilih `TCP Stream`.**
 
-<img width="644" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/74ae75da-f6ea-4e9b-930a-3eb8bac4a9df">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/9c20e5b6-29b9-4a30-9f47-5875990e8258">
 
 **4. Setelah TCP Stream dari paket tersebut ditampilkan, maka cari informasi dari tiap stream.**
 
 **5. Cek satu persatu stream, didapatkan beberapa kredensial. Coba satu persatu informasi kredensial yang ada. Sehingga, didapatkan kredensial yang tepat, yaitu `dhafin:kesayangannyak0k0` pada `stream 2`**
 
-<img width="641" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5d73728f-fa21-4d5b-9ece-a3a27e465f32">
+<img width="644" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/8599e879-5151-4d55-a735-c6b986e70b4f">
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/891e5879-4f98-4e0d-9201-b4f637a0b4f0)
+
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/c5921c01-bf16-4523-b65e-18c3cffab221)
 
