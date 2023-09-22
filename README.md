@@ -46,20 +46,20 @@
 
 #### Penjelasan :
 **1. Pertama-tama, buka file `soal2.pcapng` yang telah disediakan. Lalu, lakukan filtering untuk mendapatkan paket dengan protokol HTTP dengan mengetikkan `http` pada filter box dan klik `Enter` untuk memulai filtering.**
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/bd32769e-faf4-48b6-836c-ae0f854ce400">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/47327d1f-47ea-4227-b0a7-69a27d3b2999">
 
 
 **2. Kemudian, klik kanan pada salah satu paket dengan protokol http. Pilih `Follow` dan pilih `HTTP Stream`.**
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/7e8ec775-7279-4a01-88ac-104f9984c488">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/3b194a5e-d420-4b6a-9765-cd09bb23ab42">
 
 
 **3. Setelah HTTP Stream dari paket tersebut ditampilkan, kita dapat melihat informasi terkait web server yang digunakan pada portal praktikum Jaringan Komputer, yaitu `gunicorn`.**
 
-<img width="644" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/73162916-3e68-486d-9f12-b5e95b404488">
+<img width="646" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/13992672-8625-426f-bc0b-17ddb74d0f0c">
 
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/20fdbede-a68d-47ec-a1ff-351c6f88350b)
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/fe7d1715-0be4-4c17-92a3-7f5d23e66814)
 
 
 ## NO. 3
@@ -74,22 +74,24 @@ Keterangan Kueri :
 - `||` : Merupakan operator yang berarti `or`.
 - `(ip.dst == 239.255.255.250 && udp.dstport == 3702)` : Memfilter paket yang `menuju` address 239.255.255.250 dan Port 3702.
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/a6bafbc3-1e3c-45ef-a213-c0513567d11b">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/c04217e3-82fe-446c-962c-cea8495d7577">
 
 
 **2. Kemudian, lihat ke bagian bawah jendela wireshark dimana menunjukkan informasi terkait Jumlah Seluruh Paket `Packets` dan Jumlah Paket Hasil Filter yang tercapture `Displayed`. Berdasarkan informasi tersebut, banyak paket yang tercapture atau `Displayed`, yaitu sebanyak `21 paket`.**
-<img width="269" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/e72b7d7a-5a78-4c5c-b1ca-820a85b752e2">
+
+<img width="272" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/ba845ce2-0910-4da7-ac48-4203e7a6b937">
+
 
 ### No. 3b
 > Protokol layer transport apa yang digunakan?
 #### Penjelasan :
 **Berdasarkan hasil filter dari kueri sebelumnya, pada `kolom protocol` ditunjukkan seluruhnya menggunakan Protokol Layer Transport `UDP`.**  
 
-<img width="56" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f4abb01e-98a2-41f4-8045-ec60d51755dc">
+<img width="65" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f9e05e0f-aca0-4d50-9393-a65b18b99097">
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/8cf75ffa-3c33-4f0f-9fac-fdc7a257336e)
 
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/9e330ca3-e87a-4393-a7c7-1067fe34170a)
 
 ## NO. 4
 > Berapa nilai checksum yang didapat dari header pada paket nomor 130?
@@ -115,11 +117,11 @@ Keterangan Kueri :
 
 **1. Pertama-tama, buka file `soal5.pcap` yang telah disediakan.**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/5ed7b500-0874-41d6-ab2f-da196798c279">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/b5ad30db-390c-48db-9d09-50f7d654f425">
 
 **2. Kemudian, lihat ke bagian bawah jendela wireshark dimana menunjukkan informasi terkait Jumlah Seluruh Paket `Packets`. Berdasarkan informasi tersebut,  banyak packet yang berhasil di capture dari file pcap tersebut `Displayed`, yaitu sebanyak `60 paket`.**
 
-<img width="267" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/0697d27a-3076-45a4-a4af-ec63b4faac38">
+<img width="270" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/ed767f42-e47f-4c12-ab53-3702fea2fdc2">
 
 ### No. 5b
 > Port berapakah pada server yang digunakan untuk service SMTP?
@@ -133,38 +135,42 @@ Keterangan Kueri :
 
 **2. Alamat IP yang tercapture, yaitu `10.10.1.1, 10.10.1.4, dan 74.53.140.153`. Ternyata IP yang merupakan public IP adalah `74.53.140.153`**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/b412bd54-38f2-4391-9467-7773e49abc94">
+<img width="959" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/e53982bd-2688-48f8-99fd-8ccd4f3ef66a">
+
 
 ### Cara Mendapatkan IP nc untuk Connect ke Instance soal:
 **1. Pertama-tama, download file `soal5.pcap` yang telah disediakan dan download `zippppfileee.zip` juga.**
 
 **2. Karena kita membutuhkan password untuk ekstrak file zip, buka terlebih dahulu file `soal5.pcap`, cari paket yang memuat info terkait password, yaitu `paket 14`**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/869bdcf5-56cd-4e22-955d-0d3a5b6b32dd">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/e95cdba3-83be-4be2-ba99-57d6fcc6520e">
+
 
 **3. Kemudian, klik kanan pada paket tersebut. Pilih `Follow` dan pilih `TCP Stream`.**
 
-<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/ae1fc791-a027-4410-a437-5b39c375488c">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/f6706868-5080-4242-9f2f-2e0db15f416b">
+
 
 **4. Setelah TCP Stream dari paket tersebut ditampilkan, maka cari informasi terkait password untuk membuka file zip**
 
-<img width="643" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/b5ec29ec-fa19-4e7c-8599-aa25b52e3ade">
+<img width="644" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/905fae3e-4732-4993-9fa8-427d35198426">
 
 **5. Dari kode password yang didapatkan perlu dilakukan decode pada Base64 untuk mendapatkan password asli. Decode dilakukan dengan bantuan `https://www.base64decode.org/`. Maka, didapatkan bahwa password dari file zip adalah `5implePas5word`**
 
-<img width="581" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/971e2f05-e79c-4ec2-a1fe-274434d51137">
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/aad2a4fe-e944-49be-b9f6-3cff45f1b7f7">
 
 **4. Extract file zip tersebut dengan password `5implePas5word`.**
 
-<img width="401" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/fa097914-8bea-40b2-be5c-c2f8f6a44f43">
+<img width="250" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/0f71ed41-1d25-417d-8be8-a3c231d134dc">
+
 
 **5. Sehingga, didapatkan `nc 10.21.78.111 11111` untuk connect ke instance.**
 
-<img width="354" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/280f4a44-5a8f-49e3-a245-c6b7c940c50e">
-
+<img width="427" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/fbf2fcc9-c593-48ec-b42c-fb68dd27f3c1">
 
 **ScreenShoot Flag :**
-![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/bec813d8-e0fd-44aa-82c1-773eb9ea86f2)
+![image](https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/aeb19b64-5241-49e1-b654-5f5f02594892)
+
 
 ## NO. 6
 > Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
