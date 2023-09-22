@@ -9,7 +9,8 @@
 
 ## NO. 1
 > User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
-### No. 1a 
+### Penjelasan :
+**
 > Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
 ### No. 1b
 > Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
