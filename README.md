@@ -9,16 +9,38 @@
 
 ## NO. 1
 > User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
-### Penjelasan :
-**
+### No. 1a
 > Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+### Penjelasan :
+**Pertama, buka file `soal1.pcapng`, kemudian karena di soal menggunakan FTP, maka lakukan analyze dengan melakukan `follow` ke `TCP Stream`**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1aa.png">
+
+**Setelah itu, ubah index Stream nya hingga menemukan `aktivitas mengunngah suatu file`. Dimana dalam konteks soal ini ada di `Stream 4` dengan aktivitas unggah file bertuliskan `STOR c75-GrabThePhisher.zip`.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1ab.png">
+
+**Terakhir, buka packet aktivitasnya dan buka `Transmission Control Protocol` untuk melihat sequence numbernya.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1ac.png">
+
 ### No. 1b
-> Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+> Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
+
+**Untuk acknowledge number, ada persis di bawah sequence number.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1ad.png">
+
 ### No. 1c 
 > Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+**Untuk melihatnya, buka packet response dari c75-GrabThePhisher.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1ae.png">
+
 ### No. 1d 
 > Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
+**Sama seperti 1b, untuk acknowledge berada di bawah sequence number.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1ae.png">
+
+**SS Flag:**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/1Flag.png">
 ## NO. 2
 > Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
@@ -72,6 +94,18 @@ Keterangan Kueri :
 ## NO. 4
 > Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 #### Penjelasan :
+
+**1. Buka file `soal4.pcapng`. Kemudian buka menu `Go` dan pilih `Go to Packet` agar bisa memilih nomor paket yang ingin dikunjungi.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/2a.png">
+
+**2. Setelah itu, masukkan angka `130` untuk memilih packet nomor 130 (karena di soal didapat dari header paket nomor 130) dan klik `Go to Packet`.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/2b.png">
+
+**3. Terakhir, setelah diarahkan ke paket nomor 130, buka `User Diagram Protocol`. Di dalam User Diagram Protocol akan ada `nilai Checksum`.**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/2c.png">
+
+**SS Flag:**
+<img width="960" alt="image" src="https://gitlab.com/DarvinExa/projek/-/raw/main/JarkomPrak1/4flag.png">
 
 ## NO. 5
 > Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
