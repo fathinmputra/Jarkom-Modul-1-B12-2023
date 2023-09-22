@@ -169,9 +169,24 @@ Keterangan Kueri :
 ## NO. 6
 > Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 #### Penjelasan :
+**1. Berdasarkan soal yang didapat, terdapat beberapa hint sebagai berikut.**
 
-### Kendala :
-**Masih belum bisa menemukan caranya.**
+<img width="326" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/02ffcefc-7a86-46fa-9b31-de054669e1dd">
+
+**2. Buka file `soal6-9.pcapng` yang telah disediakan.**
+
+**3. Cari paket ke `7812`. Lalu didapatkan ip.src, yaitu `104.18.14.101`**
+
+<img width="960" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/244ce305-ce9d-4854-829e-b7e4e444320d">
+
+<img width="319" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/34a9ea66-566f-4f35-8349-585ba8fb7ce4">
+
+**4. Dari Hint yang sebelumnya didapatkan, terdapat 6 huruf. Namun, karena ip.src hanya terdiri dari 4 digit angka (`104.18.14.101`) kita harus bagi menjadi 6 digit angka (`10.4.18.14.10.1`)**
+
+**5. Selanjutnya ubah tiap digit angka dari `10.4.18.14.10.1` dengan substitusi a1z26 Cipher. Rentang Huruf yang digunakan Huruf A-R, 1-18. Sehingga, didapatkan jawaban `JDRNJA`.**
+
+**ScreenShoot Flag :**
+<img width="864" alt="image" src="https://github.com/fathinmputra/Jarkom-Modul-1-B12-2023/assets/103252800/9e989701-074a-481f-9b5e-9507cbe24f21">
 
 ## NO. 7
 > Berapa jumlah packet yang menuju IP 184.87.193.88?
