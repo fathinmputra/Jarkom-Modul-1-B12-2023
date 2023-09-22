@@ -170,6 +170,9 @@ Keterangan Kueri :
 > Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 #### Penjelasan :
 
+### Kendala :
+**Masih belum bisa menemukan caranya.**
+
 ## NO. 7
 > Berapa jumlah packet yang menuju IP 184.87.193.88?
 #### Penjelasan :
